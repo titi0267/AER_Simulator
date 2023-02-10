@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MovePlayer : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     public float speed;
     public float jump;
