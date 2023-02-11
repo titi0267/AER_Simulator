@@ -23,9 +23,11 @@ public class PlayerMove : MonoBehaviour
         _move = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(_move * speed, rb.velocity.y);
         if (_move < 0) {
-            transform.localScale = new Vector3(-1, 1, 1);
-        } else {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            //transform.localScale = new Vector3(-0.5, 0.5, 1);
+        } else if (_move > 0) {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+            //transform.localScale = new Vector3(0.5, 0.5, 1);
         }
         if(Input.GetButtonDown("Jump") && rb.velocity.y == 0)
         {
