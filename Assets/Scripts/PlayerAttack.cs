@@ -20,10 +20,8 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(fireTimer);
-        if (Keyboard.current.enterKey.wasPressedThisFrame && fireTimer <= 0f) {
+            if (Keyboard.current.enterKey.wasPressedThisFrame && fireTimer <= 0f) {
             Instantiate(bullets, shootingPoint.position, shootingPoint.rotation);
-            print("new bullet");
             fireTimer = fireRate;
         } else {
             fireTimer -= Time.deltaTime;
