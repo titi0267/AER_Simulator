@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject StartMenu;
     public GameObject SettingsMenu;
+    public AudioSource audioPlayer;
 
     void Update()
     {
@@ -29,6 +30,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        audioPlayer.UnPause();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -36,6 +38,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        audioPlayer.Pause();
         pauseMenuUI.SetActive(true);
         if (InSettings) {
             InSettings = false;

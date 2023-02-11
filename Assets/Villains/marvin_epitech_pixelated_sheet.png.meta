@@ -121,9 +121,15 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+<<<<<<< HEAD
         y: 3
         width: 135
         height: 213
+=======
+        y: 0
+        width: 0
+        height: 0
+>>>>>>> 0ea3db2388ca35b6fd7e8ec6e40dacff08d776e5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,6 +139,7 @@ TextureImporter:
       bones: []
       spriteID: b1fe46f81232f3770800000000000000
       internalID: 8592625241092845339
+<<<<<<< HEAD
       vertices: []
       indices: 
       edges: []
@@ -175,6 +182,8 @@ TextureImporter:
       bones: []
       spriteID: 86604e9638514ed62b08905fde899f21
       internalID: -709778124
+=======
+>>>>>>> 0ea3db2388ca35b6fd7e8ec6e40dacff08d776e5
       vertices: []
       indices: 
       edges: []
@@ -182,7 +191,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 19b62b4bd161f7de78d55dad3e7ec051
+=======
+    spriteID: 
+>>>>>>> 0ea3db2388ca35b6fd7e8ec6e40dacff08d776e5
     internalID: 0
     vertices: []
     indices: 
@@ -190,9 +203,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       marvin_epitech_pixelated_sheet_1: 415592756
       marvin_epitech_pixelated_sheet_0: 8592625241092845339
       marvin_epitech_pixelated_sheet_2: -709778124
+=======
+      marvin_epitech_pixelated_sheet_0: 8592625241092845339
+>>>>>>> 0ea3db2388ca35b6fd7e8ec6e40dacff08d776e5
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
