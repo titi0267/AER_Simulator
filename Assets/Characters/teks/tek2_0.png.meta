@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eebf6412051a690208a0630b65989457
+guid: ec70bc5d03183434fb4159953409a06a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,18 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -131,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f57dd1c19233218428f1e53175e7f4e2
-      internalID: 1376029607
+      spriteID: f0c5056c6af6a5343a8d34a2f5d1e40c
+      internalID: 89291205
       vertices: []
       indices: 
       edges: []
@@ -152,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dae89bff1d87a984cbbc8424e9a9e478
-      internalID: 1639628458
+      spriteID: a62dd4c75f8da364b86facda8084cc19
+      internalID: 385357352
       vertices: []
       indices: 
       edges: []
@@ -173,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42281163d0cb4544898c594a7c659926
-      internalID: -245932226
+      spriteID: 0f479df44b17cda4fb27a990556ae52d
+      internalID: -379638182
       vertices: []
       indices: 
       edges: []
@@ -194,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f84769522e9024468d3e9547120d977
-      internalID: 1120112511
+      spriteID: 81e74024dd572174bb2cc78ddf5cc2a1
+      internalID: 71612463
       vertices: []
       indices: 
       edges: []
@@ -215,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69f390cb8e4fa264da8851f3df0030e6
-      internalID: -1832051382
+      spriteID: 03f4a67c535fdfe41ae0ec72e0fa6aac
+      internalID: -1801662930
       vertices: []
       indices: 
       edges: []
@@ -236,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 278d9fa51a8c838488512f03d090cad7
-      internalID: 581625526
+      spriteID: 8409e630b3cd3994992582aa2f5169a8
+      internalID: 564238180
       vertices: []
       indices: 
       edges: []
@@ -257,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80714f0ee8cc9a44cab41fc704aeb63e
-      internalID: 330801498
+      spriteID: 40f85682defa1d54286a00e6fcee48d8
+      internalID: 133032980
       vertices: []
       indices: 
       edges: []
@@ -278,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a307353484f4242a0752313bc6fffc
-      internalID: 963931099
+      spriteID: e1e6a07afa01ea7478e54a0ac4b10a4a
+      internalID: 403394470
       vertices: []
       indices: 
       edges: []
@@ -295,14 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tek2_0_3: 1120112511
-      tek2_0_5: 581625526
-      tek2_0_2: -245932226
-      tek2_0_6: 330801498
-      tek2_0_0: 1376029607
-      tek2_0_7: 963931099
-      tek2_0_1: 1639628458
-      tek2_0_4: -1832051382
+      tek2_0_3: 71612463
+      tek2_0_5: 564238180
+      tek2_0_2: -379638182
+      tek2_0_6: 133032980
+      tek2_0_0: 89291205
+      tek2_0_7: 403394470
+      tek2_0_1: 385357352
+      tek2_0_4: -1801662930
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
