@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Blood/blood_1.png.meta
 guid: 67db9046032c7224fa36287278170692
+========
+guid: d71607c78b2b1516a8a01178fa7cf585
+>>>>>>>> 4f69d739b906191d5185983c048c726b89162fd8:Assets/Characters/teks/tek1_0.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
