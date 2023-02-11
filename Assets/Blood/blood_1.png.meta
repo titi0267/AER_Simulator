@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Characters/hero/hero_ludo.png.meta
+guid: 68c2900262ef38f4092ab9ee8d07bd63
+========
 guid: d4bda03da74af3bd48b79ddeeea7a9ac
+>>>>>>>> 771b108169904a59bd04c4a56d06e535be9f08db:Assets/Blood/blood_1.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,6 +105,21 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<<< HEAD:Assets/Characters/hero/hero_ludo.png.meta
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+========
+>>>>>>>> 771b108169904a59bd04c4a56d06e535be9f08db:Assets/Blood/blood_1.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
