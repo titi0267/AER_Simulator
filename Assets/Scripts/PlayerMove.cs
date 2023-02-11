@@ -8,8 +8,6 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     public float jump;
     private float _move;
-    private float _lastYPos;
-    private bool _isGrounded;
 
     public Rigidbody2D rb;
 
@@ -18,21 +16,18 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        _lastYPos = transform.position.y;
     }
 
     void Update()
     {
         _move = Input.GetAxis("Horizontal");
-        _isGrounded = (_lastYPos == transform.position.y);
-        _lastYPos = transform.position.y;
         rb.velocity = new Vector2(_move * speed, rb.velocity.y);
         if (_move < 0) {
             transform.localScale = new Vector3(-1, 1, 1);
         } else {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        if(Input.GetButtonDown("Jump") && _isGrounded == true)
+        if(Input.GetButtonDown("Jump") && rb.velocity.y == 0)
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
         }
