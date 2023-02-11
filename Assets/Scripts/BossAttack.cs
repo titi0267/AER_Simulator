@@ -12,7 +12,7 @@ public class BossAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fireRate = 0.5f;
+        fireRate = 1f;
         fireTimer=fireRate;
     }
 
