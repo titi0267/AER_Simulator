@@ -13,7 +13,7 @@ public class BossAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fireRate = 5f;
+        fireRate = Random.Range(1, 6);
         fireTimer=fireRate;
         _health = 100;
     }
@@ -23,6 +23,7 @@ public class BossAttack : MonoBehaviour
     {
         if (fireTimer <= 0f) {
             Instantiate(bulletBoss, shootingPoint.position, shootingPoint.rotation);
+            fireRate = Random.Range(1, 4);
             fireTimer = fireRate;
         } else {
             fireTimer -= Time.deltaTime;
