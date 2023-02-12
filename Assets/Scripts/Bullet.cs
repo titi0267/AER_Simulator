@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = (transform.right *speed)*-1;
-        // Destroy(gameObject, 10f);
+        Destroy(gameObject, 10f);
     }
 
     // void Update()
@@ -34,6 +34,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        Debug.Log("Trigger");
         BossAttack boss = collider.GetComponent<BossAttack>();
 
         if (boss != null) {
@@ -42,7 +43,7 @@ public class Bullet : MonoBehaviour
         }
         if (collider.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent))
         {
-            enemyComponent.TakeDamage(1);
+            enemyComponent.TakeDamage(1f);
         }
         // Destroy(gameObject);
         Destroy(gameObject, 5f);
