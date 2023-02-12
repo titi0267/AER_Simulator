@@ -31,7 +31,6 @@ public class PlayerHealth : MonoBehaviour
         }
         _health -= damageAmount;
         _HealthBar.setMaxHealth(_health);
-
     }
 
     public void heal(int healAmount) {
