@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class healthBar : MonoBehaviour
 {
     public Slider slider;
+    public GameObject Gameovercanvas;
 
     public void setMaxHealth(int health)
     {
@@ -16,5 +17,8 @@ public class healthBar : MonoBehaviour
     public void setHealth(int health)
     {
         slider.value = health;
+        if (health <= 0) {
+            Gameovercanvas.gameObject.SetActive(true);
+        }
     }
 }

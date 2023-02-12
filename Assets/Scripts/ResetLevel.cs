@@ -15,7 +15,11 @@ public class ResetLevel : MonoBehaviour
     void Update()
     {
         if (transform.position.x > 137 && transform.position.x < 138 && Input.GetKeyDown(KeyCode.E)) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Resetthelevel();
         }  
+    }
+    public void Resetthelevel()
+    {
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
     }
 }
