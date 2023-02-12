@@ -16,25 +16,9 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, 10f);
     }
 
-    // void Update()
-    // {
-    //     onCollisionEnter2d(collision);
-    // }
-
-    // void onCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent))
-    //     {
-    //         enemyComponent.TakeDamage(1);
-    //     }
-    //     Destroy(gameObject);
-    //     rb.velocity = (transform.right *speed);
-    //     Destroy(gameObject, 5f);
-    // }
-
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Trigger");
+        Debug.Log("Trigger : bullet hit");
         BossAttack boss = collider.GetComponent<BossAttack>();
 
         if (boss != null) {
