@@ -7,12 +7,12 @@ public class PlayerHealth : MonoBehaviour
     public int _health;
     public int _maxHealth = 100;
 
-    public healthBar _healthBar;
+    public healthBar _HealthBar;
 
     void Start()
     {
         _health = _maxHealth;
-        _healthBar = setMaxhealth(_maxHealth);
+        _HealthBar.setMaxHealth(_maxHealth);
     }
 
     void Update()
@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
         _health -= damageAmount;
-        _healthBar.setMaxHealth(_maxHealth);
+        _HealthBar.setMaxHealth(_health);
 
     }
 
