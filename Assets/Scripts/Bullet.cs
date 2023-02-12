@@ -40,7 +40,7 @@ public class Bullet : MonoBehaviour
             boss.setHealth(10);
             Destroy(gameObject);
         }
-        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent))
+        if (collider.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent))
         {
             enemyComponent.TakeDamage(1);
         }
