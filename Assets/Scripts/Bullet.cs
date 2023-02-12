@@ -6,27 +6,23 @@ public class Bullet : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D rb;
+    public GameObject boss;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = (transform.right *speed)*-1;
-        // Destroy(gameObject, 10f);
+        rb.velocity = (transform.right *speed);
+        Destroy(gameObject, 5f);
     }
 
-    // void Update()
-    // {
-    //     onCollisionEnter2d(collision);
-    // }
-
-    public void onCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent))
-        {
-            enemyComponent.TakeDamage(1);
-        }
-        Destroy(gameObject);
-    }
+        BossAttack boss = collider.GetComponent<BossAttack>();
 
+        if (boss != null) {
+            boss.setHealth(10);
+            Destroy(gameObject);
+        }
+    }
 }

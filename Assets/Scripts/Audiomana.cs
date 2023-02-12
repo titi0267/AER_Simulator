@@ -20,7 +20,7 @@ public class Audiomana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Player.transform.position.x >= 5 && !Isplayed) {
+        if (Player.transform.position.x >= -15 && !Isplayed) {
             audioSource.Stop();
             audioSource.clip = playlist[2];
             audioSource.loop = true;

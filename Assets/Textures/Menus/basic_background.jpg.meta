@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Blood/blood_3.png.meta
 guid: b65d5ef4f2b1a8847b027e58d599b187
-========
-guid: 6785a40a52740f34a98126f56a3de9a4
->>>>>>>> 4f69d739b906191d5185983c048c726b89162fd8:Assets/Textures/Menus/basic_background.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,8 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<<< HEAD:Assets/Blood/blood_3.png.meta
-========
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -119,7 +113,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>>> 4f69d739b906191d5185983c048c726b89162fd8:Assets/Textures/Menus/basic_background.jpg.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
