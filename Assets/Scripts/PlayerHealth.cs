@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         _health = _maxHealth;
-        _HealthBar.setMaxHealth(_maxHealth);
+        _HealthBar.setMaxHealth(_health);
     }
 
     void Update()
