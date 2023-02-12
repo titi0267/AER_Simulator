@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
             PlayerHealth player = collider.collider.GetComponent<PlayerHealth>();
 
             if (player != null && collisionTimer <= 0) {
-                player.damage(10);
+                player.damage(20);
                 collisionTimer = maxTimer;
             }
         }

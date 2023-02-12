@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         _health = _maxHealth;
-        _HealthBar.setMaxHealth(_maxHealth);
+        _HealthBar.setMaxHealth(_health);
     }
 
     void Update()
@@ -27,10 +27,11 @@ public class PlayerHealth : MonoBehaviour
     public void damage(int damageAmount) {
         if (_health - damageAmount <= 0) {
             _health = 0;
+            _HealthBar.setHealth(_health);
             return;
         }
         _health -= damageAmount;
-        _HealthBar.setMaxHealth(_health);
+        _HealthBar.setHealth(_health);
     }
 
     public void heal(int healAmount) {
