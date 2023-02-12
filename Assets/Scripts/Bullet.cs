@@ -12,7 +12,21 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = (transform.right *speed)*-1;
-        Destroy(gameObject, 10f);
+        // Destroy(gameObject, 10f);
+    }
+
+    // void Update()
+    // {
+    //     onCollisionEnter2d(collision);
+    // }
+
+    public void onCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent))
+        {
+            enemyComponent.TakeDamage(1);
+        }
+        Destroy(gameObject);
     }
 
 }

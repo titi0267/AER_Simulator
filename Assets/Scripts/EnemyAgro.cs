@@ -62,6 +62,6 @@ public class EnemyAgro : MonoBehaviour
 
     void StopChasingPlayer()
     {
-        // rb2d.velocity = new Vector2(0, 0);
+        rb2d.velocity = new Vector2(0, 0);
     }
 }
