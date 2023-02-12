@@ -70629,6 +70629,7 @@ GameObject:
   - component: {fileID: 955883449}
   - component: {fileID: 955883448}
   - component: {fileID: 955883450}
+  - component: {fileID: 955883451}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -70815,6 +70816,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &955883451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955883442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc17206bdc868304eb93806f53211a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &968577685
 GameObject:
   m_ObjectHideFlags: 0
@@ -71351,7 +71364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1218774325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -71790,7 +71803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260873415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.43, y: 0.62, z: 0}
+  m_LocalPosition: {x: -24.52, y: 0.26, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76687,7 +76700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1918932808
 MonoBehaviour:
   m_ObjectHideFlags: 0
