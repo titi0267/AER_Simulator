@@ -1,10 +1,11 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Interaction : MonoBehaviour
 {
+    public GameObject dialoguePanel;
     private bool isInRange;
     public Text interactUI;
 
@@ -17,7 +18,7 @@ public class Interaction : MonoBehaviour
     {
         if (isInRange)
         {
-            awake();
+
         }
     }
 
@@ -26,6 +27,7 @@ public class Interaction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isInRange = true;
+            dialoguePanel.SetActive(true);
             interactUI.enabled = true;
         }
     }
@@ -35,8 +37,8 @@ public class Interaction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isInRange = false;
+            dialoguePanel.SetActive(false);
             interactUI.enabled = false;
         }
     }
 }
-*/
