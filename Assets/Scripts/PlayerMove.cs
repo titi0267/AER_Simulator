@@ -34,4 +34,5 @@ public class PlayerMove : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, jump));
         }
     }
+
 }

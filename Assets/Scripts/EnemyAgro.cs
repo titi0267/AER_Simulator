@@ -26,7 +26,6 @@ public class EnemyAgro : MonoBehaviour
     {
         // distance to player
         float distToPlayer = Vector2.Distance(transform.position, player.position);
-        print("distance to player:" + distToPlayer);
 
         if (distToPlayer < agroRange)
         {
@@ -63,5 +62,19 @@ public class EnemyAgro : MonoBehaviour
     void StopChasingPlayer()
     {
         rb2d.velocity = new Vector2(0, 0);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collision(ENTER) : mob hit player");
+        // player takes 50 dmg because of mob Collision
+        // damage(50);
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        Debug.Log("Collision(EXIT) : mob hit player");
+        // player takes 50 dmg because of mob Collision
+        // damage(50);
     }
 }
