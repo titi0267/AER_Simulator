@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private int _health;
-    // Start is called before the first frame update
+    public int _health;
+    public int _maxHealth = 100;
+
+    public healthBar _healthBar;
+
     void Start()
     {
-        _health = 100;
+        _health = _maxHealth;
+        _healthBar = setMaxhealth(_maxHealth);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public int getHealth() {
@@ -27,7 +30,8 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
         _health -= damageAmount;
-        print(_health);
+        _healthBar.setMaxHealth(_maxHealth);
+
     }
 
     public void heal(int healAmount) {
