@@ -11,16 +11,15 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public static bool InSettings = false;
     public GameObject pauseMenuUI;
-    public GameObject StartMenu;
     public GameObject SettingsMenu;
     public AudioSource audioPlayer;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            if (GameIsPaused && !InSettings && !StartMenu.gameObject.activeSelf) {
+            if (GameIsPaused && !InSettings) {
                 Resume();
-            } else if (!GameIsPaused && !InSettings && !StartMenu.gameObject.activeSelf) {
+            } else if (!GameIsPaused && !InSettings) {
                 Pause();
             } else {
                 ReturnToprevious();
@@ -49,11 +48,11 @@ public class PauseMenu : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        StartMenu.gameObject.SetActive(true);
         pauseMenuUI.gameObject.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("SampleScene2");
 
     }
 
