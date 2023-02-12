@@ -15,7 +15,7 @@ public class BossAttack : MonoBehaviour
     {
         fireRate = 5f;
         fireTimer=fireRate;
-        _health = 15;
+        _health = 100;
     }
 
     // Update is called once per frame

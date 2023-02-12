@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class BulletFromBoss : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D rb;
-    public GameObject boss;
-
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +17,11 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        BossAttack boss = collider.GetComponent<BossAttack>();
+        PlayerHealth player = collider.GetComponent<PlayerHealth>();
 
-        if (boss != null) {
-            boss.setHealth(10);
+        if (player != null) {
+            player.damage(10);
             Destroy(gameObject);
         }
-        if (collider.gameObject.TryGetComponent<Enemy>(out Enemy enemyComponent))
-        {
-            enemyComponent.TakeDamage(1f);
-            Destroy(gameObject);
-        }
-        // Destroy(gameObject);
-        Destroy(gameObject, 5f);
     }
 }
