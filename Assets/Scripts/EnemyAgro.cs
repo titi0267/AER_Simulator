@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyAgro : MonoBehaviour
 {
-    [SerializeField]
-    Transform player;
+    public GameObject player;
+    Transform target;
 
     [SerializeField]
     float agroRange;
@@ -19,13 +19,15 @@ public class EnemyAgro : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        player = GameObject.FindWithTag("Player");
+        target = player.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
         // distance to player
-        float distToPlayer = Vector2.Distance(transform.position, player.position);
+        float distToPlayer = Vector2.Distance(transform.position, target.position);
 
         if (distToPlayer < agroRange)
         {
@@ -44,13 +46,13 @@ public class EnemyAgro : MonoBehaviour
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
 
-        if (transform.position.x < player.position.x)
+        if (transform.position.x < target.position.x)
         {
             // enemy is to the left side of the player, so move right
             rb2d.velocity = new Vector2(moveSpeed, 0);
             spriteRenderer.flipX = false;
         }
-        else if (transform.position.x > player.position.x)
+        else if (transform.position.x > target.position.x)
         {
             // enemy is to the right side of the player, so move left
             rb2d.velocity = new Vector2(-moveSpeed, 0);

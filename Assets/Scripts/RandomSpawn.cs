@@ -10,8 +10,14 @@ public class RandomSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int randEnemy;
 
-        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+        for (int i = 0; i <= 23; i++) {
+            randEnemy = Random.Range(0,2);
+            if (randEnemy == 1) {
+                Instantiate(enemy, spawnPoint[i].position, spawnPoint[i].rotation);
+            }
+        }
     }
 
     // Update is called once per frame
