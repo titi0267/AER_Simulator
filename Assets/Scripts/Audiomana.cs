@@ -12,7 +12,7 @@ public class Audiomana : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource.clip = playlist[0];
+        audioSource.clip = playlist[1];
         audioSource.loop = true;
         audioSource.Play();
     }
@@ -27,12 +27,5 @@ public class Audiomana : MonoBehaviour
             audioSource.Play();
             Isplayed = true;
         }
-    }
-    public void GoToHub()
-    {
-        audioSource.Stop();
-        audioSource.clip = playlist[1];
-        audioSource.loop = true;
-        audioSource.Play();
     }
 }
