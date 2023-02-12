@@ -29,7 +29,7 @@ public class PlayerMove : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180, 0);
             //transform.localScale = new Vector3(0.5, 0.5, 1);
         }
-        if(Input.GetButtonDown("Jump") && rb.velocity.y == 0)
+        if(Input.GetButtonDown("Jump") && transform.position.y <= -0.38)
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
         }
