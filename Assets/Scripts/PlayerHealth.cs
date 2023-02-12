@@ -27,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
         _health -= damageAmount;
+        print(_health);
     }
 
     public void heal(int healAmount) {

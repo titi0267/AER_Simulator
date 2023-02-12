@@ -26,7 +26,7 @@ public class EnemyAgro : MonoBehaviour
     {
         // distance to player
         float distToPlayer = Vector2.Distance(transform.position, player.position);
-        print("distance to player:" + distToPlayer);
+        //print("distance to player:" + distToPlayer);
 
         if (distToPlayer < agroRange)
         {
