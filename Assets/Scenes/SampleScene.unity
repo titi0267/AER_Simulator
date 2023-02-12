@@ -70872,7 +70872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jump: 500
+  jump: 300
   rb: {fileID: 955883443}
 --- !u!114 &955883448
 MonoBehaviour:
@@ -72083,7 +72083,7 @@ MonoBehaviour:
   dialogue:
   - Yo, Ludo
   - La mouli est defaillante, elle pose plein de problemes.
-  - "Pars la r\xE9parer, on a pas beacoup de temps"
+  - Pars la reparer, on a pas beacoup de temps
   contButton: {fileID: 1333057280}
   wordSpeed: 0.06
   playerIsClose: 0
